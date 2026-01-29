@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User — Modern UI</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <div class="profile">
+          <div class="avatar" aria-hidden="true">
+            <img src="" alt="User avatar" id="userImage" />
+          </div>
+          <div>
+            <h1 id="fullName">Random User</h1>
+            <div class="meta muted-small" id="userTitle">
+              Click the button to load a user
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 12px;
+            ">
+            <div class="muted-small">User Data</div>
+            <div class="controls">
+              <button id="fetchBtn" class="btn">Get Random User Data</button>
+            </div>
+          </div>
+
+          <div class="info" style="margin-top: 14px">
+            <div class="item">
+              <div class="label">First name</div>
+              <div class="value" id="firstName">—</div>
+            </div>
+            <div class="item">
+              <div class="label">Last name</div>
+              <div class="value" id="lastName">—</div>
+            </div>
+            <div class="item">
+              <div class="label">Email</div>
+              <div class="value" id="userMail">—</div>
+            </div>
+            <div class="item">
+              <div class="label">Phone</div>
+              <div class="value" id="userPhone">—</div>
+            </div>
+            <div class="item">
+              <div class="label">Age</div>
+              <div class="value" id="userAge">—</div>
+            </div>
+            <div class="item">
+              <div class="label">Location</div>
+              <div class="value" id="userLocation">—</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <h3>Made with ❤️ by Rk Developer</h3>
+        Built with the Random User API • Open this file in your browser to test
+      </footer>
+    </div>
+  </body>
+</html>
